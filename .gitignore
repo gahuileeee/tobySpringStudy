@@ -1,0 +1,23 @@
+# Build
+/build/
+/out/
+
+# Gradle
+.gradle/
+/!gradle/wrapper/gradle-wrapper.jar
+
+# Logs & temp
+*.log
+*.tmp
+/test-output/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
