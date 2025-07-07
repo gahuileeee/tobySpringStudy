@@ -8,8 +8,8 @@ public class PaymentService {
     private final ExRateProvider exRateProvider;
     // 요청이 올 때마다 새로 생성하지 않고, 한 번만 인스턴스화하여 재사용함
 
-    public PaymentService(){
-        this.exRateProvider = new WebApiExRatePaymentProvider();
+    public PaymentService(ExRateProvider exRateProvider){
+        this.exRateProvider = exRateProvider;
     }
 
     public Payment prepare(Long orderId, String currency, BigDecimal foreignCurrencyAmount) throws IOException {
